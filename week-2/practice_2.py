@@ -8,4 +8,4 @@ c = 299792458
 energy = m * c **2
 
 # Displaying the result
-print(f"The energy equivalent to {m} kg of mass is {energy} joules.") 
+print(f"The energy equivalent to {m} kg of mass is {energy} joules.")

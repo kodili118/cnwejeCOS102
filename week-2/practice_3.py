@@ -6,4 +6,4 @@ print(list[0])        # Prints first element of the list
 print(list[1:3])      # Prints element starting from the 2nd till 3rd
 print(list[2:])       # Prints elements starting from 3rd element
 print(shortlist * 2)   # Prints list two times
-print(list + shortlist) # Prints concatenated list
+print(list + shortlist) # Prints concatenated list 
