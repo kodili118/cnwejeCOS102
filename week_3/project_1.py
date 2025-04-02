@@ -1,23 +1,16 @@
-# data for girls in the class
-girls_names = ['Evelyn', 'Jessica', 'Somto', 'Edith', 'Liza', 'Madonna', 'Waje', 'Tola', 'Aisha', 'Latifa']
-girls_age = [17, 16, 17, 18, 16, 18, 17, 20, 19, 17]
-girls_height = [5.5, 6.0, 5.4, 5.9, 5.6, 5.5, 6.1, 6.0, 5.7, 5.5]
-girls_scores = [80, 85, 70, 60, 76, 66, 87, 95, 50, 49]
+from tabulate import tabulate 
 
-# data for boys in the class
-boys_names = ['Chinedu', 'Liam', 'Wale', 'Gbenga', 'Abiola', 'Kola', 'Kunle', 'George', 'Thomas', 'Wesley']
-boys_age = [19, 16, 18, 17, 20, 19, 16, 18, 17, 19]
-boys_height = [5.7, 5.9, 5.8, 6.1, 5.9, 5.5, 6.1, 5.4, 5.8, 5.7]
-boys_scores = [74, 87, 75, 68, 66, 78, 87, 98, 54, 60]
+# Data as a list of tuples
+data =  [
+    ("Evelyn", 17, 5.5, 80), ("Jessica", 16, 6.0, 85), ("Somto", 17, 5.4, 70),
+    ("Edith", 18, 5.9, 60), ("Liza", 16, 5.6, 76), ("Madonna", 18, 5.5, 66),
+    ("Waje", 17, 6.1, 87), ("Tola", 20, 6.0, 95), ("Aisha", 19, 5.7, 50),
+    ("Latifa", 17, 5.5, 49), ("Chinedu", 19, 5.7, 74), ("Liam", 16, 5.9, 87),
+    ("Gbenga", 17, 6.1, 68), ("Abiola", 20, 5.9, 66), ("Kola", 19, 5.5, 78),
+    ("Kunle", 16, 6.1, 87), ("George", 18, 5.4, 98), ("Thomas", 17, 5.8, 54), ("Wesley", 19, 5.7, 60)]
 
-# Combine data
-names = girls_names + boys_names
-ages = girls_age + boys_age
-heights = girls_height + boys_height
-scores = girls_scores + boys_scores 
+# Column headers
+headers = ["Name", "Age", "Height", "Score"]
 
-# Create DataFrame
-df = pd.DataFrame({"Name": names, "Age": ages ,"Height": heights ,"Score": scores})
-
-# Display DataFrame
-print(df)
+# Print table
+print(tabulate(data, headers=headers, tablefmt="grid"))
