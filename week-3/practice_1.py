@@ -11,3 +11,4 @@ city_2 = temp
 
 print(f"The name of City 1 after swapping is {city_1}")
 print(f"The name of City_2 after swapping is {city_2}")
+ 
