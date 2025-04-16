@@ -1,4 +1,4 @@
-str = input("Enter your state of origin:")
+str = input("Enter your state of origin: ")
 
 print ("Your state of origin is: ", str)
 print ("The first character is: ", str[0])
