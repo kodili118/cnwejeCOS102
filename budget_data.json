@@ -1,0 +1,20 @@
+{
+    "monthly_budget": 1000000.0,
+    "categories": [
+        {
+            "id": "20250612190231684031",
+            "name": "food",
+            "allocated": 50000.0
+        }
+    ],
+    "transactions": [
+        {
+            "id": "20250612190123986858",
+            "type": "income",
+            "amount": 10000.0,
+            "date": "2025-06-12",
+            "categoryId": null,
+            "description": "grocery shopping"
+        }
+    ]
+}
